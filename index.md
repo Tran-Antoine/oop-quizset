@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+## Quizz sur les notions abordées en CS108
 
-You can use the [editor on GitHub](https://github.com/Tran-Antoine/oop-quizset/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Ce site a pour but de répertorier les questions hebdomadaires proposées par le programme `Le Sphinx`. Chaque ensemble de questions porte sur un thème abordé lors des leçons du professeur Michel Schinz, et a pour but de vérifier votre compréhension du sujet, ainsi que de présenter quelques pièges à éviter.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Table des matières 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Tran-Antoine/oop-quizset/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* to be completed
