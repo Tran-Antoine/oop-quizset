@@ -1,6 +1,7 @@
-theme: jekyll-theme-slate
-title: Quizz CS108
-description: Ensemble de questions portant sur les notions abordées en pratique de la programmation orientée objet
-url: https://tran-antoine.github.io/oop-quizset/
+theme: "jekyll-theme-slate"
+title: "Quizz CS108"
+description: "Ensemble de questions portant sur les notions abordées en pratique de la programmation orientée objet"
+url: "https://tran-antoine.github.io"
+baseurl: "/oop-quizset"
 logo: "favicon.ico"
 lang: "fr"
