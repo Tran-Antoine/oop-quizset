@@ -4,10 +4,6 @@ description: Ensemble de questions portant sur les notions abordées en pratique
 logo: "favicon.ico"
 baseurl: ""
 lang: "fr"
-markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
-plugins:
-  - jekyll-seo-tag
-  - jekyll-remote-theme
