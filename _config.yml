@@ -2,8 +2,4 @@ theme: jekyll-theme-slate
 title: Quizz CS108
 description: Ensemble de questions portant sur les notions abordées en pratique de la programmation orientée objet
 logo: "favicon.ico"
-baseurl: ""
 lang: "fr"
-exclude:
-  - Gemfile
-  - Gemfile.lock
