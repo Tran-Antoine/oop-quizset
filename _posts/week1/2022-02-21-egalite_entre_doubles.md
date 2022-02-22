@@ -1,4 +1,4 @@
 ---
-layout: post
+layout: default
 title:  "Egalité entre doubles"
 ---
