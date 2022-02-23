@@ -21,6 +21,8 @@ public int[] duplicate(int[] in) {
 }
 ```
 
+***
+
 A.
 ```java
 for(int n = 0; n < 200; n++) {
