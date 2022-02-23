@@ -3,6 +3,7 @@ layout: page
 title:  "Lecture de code 1"
 ---
 Vrai ou Faux:
+
 Nous avons codé la méthode `myMin` suivante pour trouver le minimum d'un array:
 ```java
 int myMin(int[] x) {
