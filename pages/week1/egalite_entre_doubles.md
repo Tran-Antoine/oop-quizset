@@ -32,4 +32,4 @@ Tester l'égalité entre deux `doubles` n'est jamais une bonne idée étant donn
 elles ne seront jamais exactement les mêmes (ce qui peut arriver très facilement en raison des erreurs de *floating point*). Dans ce genre de cas il vaut mieux utiliser une variante de la méthode `assertEquals` dont l'entête est la suivante : `assertEquals(double expected, double actual, double delta)`.
 L'argument `delta` est la tolérance et le test ne passe que si la différence entre `expected` et `actual` est plus petite que `delta`.  
 
-Il en suit donc que la réponse correcte est **Faux**
+Il s'ensuit donc que la réponse correcte est **Faux**
