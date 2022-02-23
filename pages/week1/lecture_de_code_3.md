@@ -4,9 +4,9 @@ title:  "Lecture de code 3"
 ---
 Vrai ou Faux :
 
-Lorsque nécessaire, partez du principe que `someRandomArrayOfInts` renvoie un tableau de taille aléatoire non nulle contenant des entiers aléatoires.
-Nous avons codé la méthode `myMean` qui renvoie la moyenne d'un array de int (sous forme de double).
-Puisque nous sommes des programmeurs prudents, nous avons aussi écrit un test unitaire pour vérifier que notre méthode `myMean` fonctionne correctement:
+> Note: Lorsque nécessaire, partez du principe que `someRandomArrayOfInts` renvoie un tableau de taille aléatoire non nulle contenant des entiers aléatoires.
+
+Nous avons codé la méthode `myMean` qui renvoie la moyenne d'un array de int (sous forme de double). Puisque nous sommes des programmeurs prudents, nous avons aussi écrit un test unitaire pour vérifier que notre méthode `myMean` fonctionne correctement:
 ```java
 @Test
 void method_mean_works() {
