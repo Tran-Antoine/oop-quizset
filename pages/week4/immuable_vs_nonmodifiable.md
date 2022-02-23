@@ -68,4 +68,4 @@ __Pourquoi `A` est non-modifiable ?__
 
 `someMysteriousFunction` peut représenter n'importe quelle fonction. Admettons qu'elle soit malicieuse et cherche à tout prix à modifier l'objet `a` passé en paramètre. On nous affirme que `someMysteriousFunction` n'est pas capable de modifier `a` donc, elle ne peut pas appeler de méthode modifiant `a`. `A` est donc non-modifiable. 
 
-Bonne réponse : **C**
+La réponse correcte est donc la réponse **C**
