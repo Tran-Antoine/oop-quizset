@@ -5,8 +5,8 @@ Ce site a pour but de répertorier les questions hebdomadaires proposées par le
 
 ### Table des matières 
 
-* [Tests unitaires](/week1/toc.md)
-* [Immuabilité](/week4/toc.md)
+* [Tests unitaires](/pages/week1/toc.md)
+* [Immuabilité](/pages/week4/toc.md)
 
 ***
 
