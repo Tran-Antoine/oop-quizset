@@ -2,4 +2,4 @@ Ce site a pour but de répertorier les questions hebdomadaires proposées par le
 
 ### Table des matières 
 
-* [Tests unitaires]({% post_url week1/2022-02-21-toc %})
+* [Tests unitaires]({% post_url /week1/2022-02-21-toc %})
