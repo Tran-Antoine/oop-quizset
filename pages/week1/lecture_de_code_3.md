@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title:  "Lecture de code 3"
 ---
 Vrai ou Faux :
