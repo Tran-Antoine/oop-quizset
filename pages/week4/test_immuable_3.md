@@ -6,7 +6,7 @@ title:  "Test d'immuabilité 3"
 Vrai ou Faux:
 
 La classe `Cours` décrite ci-dessous est immuable.
-> Note: le constructeur de la classe `Cours` étant privé et le code donné étant exhaustif, seul la classe `CoursBuilder` peut l'instancier.
+> Note: le constructeur de la classe `Cours` étant privé et le code donné étant exhaustif, seule la classe `CoursBuilder` peut l'instancier.
 
 ```java
 
@@ -48,7 +48,7 @@ public final class Cours {
 
 ### Solution
 
-Question tirée d'une perte de points personnelle dans le projet de `2021` 😄
+Question tirée d'une perte de points personnelle dans le projet de 2021 😄
 
 A première vue, puisque seul le `CoursBuilder` a accès au constructeur de `Cours`, et que c'est lui qui initialise la liste, il semble qu'une copie de `names` dans le constructeur de `Cours` est inutile. Mais ce contre-exemple pernicieux prouve le contraire:
 ```java
