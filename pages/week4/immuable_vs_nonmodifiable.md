@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Are we the same ?"
+title:  "Immuable vs non modifiable"
 ---
 
 On définit les 2 classes suivantes :
