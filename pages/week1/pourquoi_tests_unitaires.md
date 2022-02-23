@@ -19,7 +19,7 @@ Si un certain bout de code est trop compliqué à tester, il suffit de le décou
 
 ### Solution
 
-Cette question a pour but de vérifier le rôle que les tests jouent dans un programme. Cela peut paraître contre-intuitif, mais dans un sens, les tests ne servent pas à vérifier la validité du programme, ils servent à **trouver des problèmes**. Lorsqu'un test (correctement écrit) échoue, on a la garantie qu'une partie de notre code ne fonctionne pas. En revanche, la réciproque est fausse: il est tout à fait possible que certains problèmes dans le code passent inaperçus dans les tests !
+Cette question a pour but de faire comprendre le rôle que les tests jouent dans un programme. Cela peut paraître contre-intuitif, mais dans un sens, les tests ne servent pas à vérifier la validité du programme, ils servent à **trouver des problèmes**. Lorsqu'un test (correctement écrit) échoue, on a la garantie qu'une partie de notre code ne fonctionne pas. En revanche, la réciproque est fausse: il est tout à fait possible que certains problèmes dans le code passent inaperçus dans les tests !
 
 De plus, les tests unitaires jouent un rôle uniquement dans l'aspect **fonctionalité** du programme. Ils ne vérifient pas si un code est proprement écrit, flexible, efficace, etc. Ils ne peuvent donc en aucun cas complètement remplacer les *reviews* de code. 
 
