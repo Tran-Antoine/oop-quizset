@@ -1,8 +1,7 @@
 ---
+layout: page
 title:  "Lecture de code 4"
 ---
-
-### Lecture de code 4
 
 Quel morceau de code teste la méthode `duplicate` décrite ci-dessous avec le plus de fiabilité ?
 Lorsque nécessaire, partez du principe que `someRandomArrayOfInts` renvoie un tableau de taille aléatoire contenant des entiers aléatoires.
