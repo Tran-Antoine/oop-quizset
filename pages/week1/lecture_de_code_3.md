@@ -22,13 +22,12 @@ Alors ce test unitaire est robuste face aux erreurs d'implémentation (i.e il a 
 ### Solution
 
 Cete question est un bon exemple de test robuste face aux erreurs d'implémentation :
-- Il teste une grande variété d'arrays et donc, a de grandes chances de tomber sur un cas qui ne fonctionne pas si `myMean` est mal implémentée
+- Il teste une grande variété de tableaux et donc, a de grandes chances de tomber sur un cas qui ne fonctionne pas si `myMean` est mal implémentée
 - Le résultat de `myMean` est comparé à un résultat vrai déjà connu. En l'occurrence, nous savons que `correctSum` renvoie
-la somme correcte de l'array passé en paramètre et nous avons utilisé la bonne définition de la moyenne
+la somme correcte de le tableau passé en paramètre et nous avons utilisé la bonne définition de la moyenne
 - Nous avons pris soin d'ajouter le 3ème argument "delta" à `assertEquals` puisque nous comparons des `double`s
 
-Par souci de complétude, nous aurions dû vérifier les cas limites (i.e que se passe-t-il si l'array est vide par exemple ?),
-mais puisque le comportement attendu de `myMean` est ambigu, nous avons choisi d'ommettre cette possibilité pour cette question. Bien sûr, dans la
-pratique, il faut toujours tester les cas limites :)
+Par souci de complétude, nous aurions dû vérifier les cas limites (i.e que se passe-t-il si le tableau est vide par exemple ?),
+mais puisque le comportement attendu de `myMean` est ambigu, nous avons choisi d'ommettre cette possibilité pour cette question. Bien sûr, dans la pratique, il faut toujours tester les cas limites :)
 
 Réponse : **Vrai**
