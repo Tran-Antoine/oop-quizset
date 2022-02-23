@@ -21,13 +21,21 @@ public class Zoo {
 }
 ```
 A. Car la classe `Zoo` n'est pas déclarée `final`.
+
 B. Car la classe possède un getter donnant accès à un attribut de la classe directement.
+
 C. Car la classe `Animal` peut être muable
+
 D. Car l'attribut `animals` peut être modifié
+
 E. Pour les raisons A, C et D
+
 F. Pour les raisons A, B et C
+
 G. Pour les raisons A et C
+
 H. Pour les raisons A et D
+
 I. Pour toutes les raisons ci-dessus
 
 
