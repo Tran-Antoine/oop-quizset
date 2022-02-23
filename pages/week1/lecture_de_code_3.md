@@ -22,7 +22,7 @@ Alors ce test unitaire est robuste face aux erreurs d'implémentation (i.e il a 
 ### Solution
 
 Cete question est un bon exemple de test robuste face aux erreurs d'implémentation :
-- Il teste une grande variété de tableaux et donc, a de grandes chances de tomber sur un cas qui ne fonctionne pas si `myMean` est mal implémentée
+- Il teste une grande variété de tableaux et a donc de grandes chances de tomber sur un cas qui ne fonctionne pas si `myMean` est mal implémentée
 - Le résultat de `myMean` est comparé à un résultat vrai déjà connu. En l'occurrence, nous savons que `correctSum` renvoie
 la somme correcte de le tableau passé en paramètre et nous avons utilisé la bonne définition de la moyenne
 - Nous avons pris soin d'ajouter le 3ème argument "delta" à `assertEquals` puisque nous comparons des `double`s

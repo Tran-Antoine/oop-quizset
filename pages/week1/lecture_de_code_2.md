@@ -16,13 +16,10 @@ assertEquals(14.14, sum, 1e-8);
 
 ### Solution
 
-Le fait qu'une méthode passe un de nos tests ne nous donne aucune garantie
-que cette méthode est implémentée correctement. En l'occurrence, il n'y a aucune erreur liée
-aux opérations et comparaisons sur des `double`s puisque la note nous informe que la
-somme donne le résultat escompté, et nous avons pris le soin d'ajouter un "delta" (3ème argument
-de `assertEquals`) qui nous donne une marge d'erreur lors de la comparaison de `double`s.
+Etant donné que nous comparons des valeurs de type `double`, il est important de déterminer une certaine distance tolérée entre la valeur `expected` et `actual`, ce qui est correctement fait ici avec la valeur `1e-8` en troisième paramètre de `assertEquals`.
 
-En revanche, nous n'avons aucune idée de comment la méthode sum est implémentée. Il se peut très bien
+En revanche, le fait qu'une méthode passe un de nos tests ne nous donne aucune garantie
+que cette méthode est implémentée correctement. Nous n'avons aucune idée de comment la méthode sum est implémentée. Il se peut très bien
 que `mySum` ignore le tableau passé en paramètre et renvoie toujours `14.14`, ce qui passerait le test !
 
 La bonne réponse est donc **Faux**
