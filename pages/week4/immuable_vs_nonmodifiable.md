@@ -13,9 +13,10 @@ Soit le code suivant :
 A a = new B();
 someMysteriousFunction(a);
 ```
-`someMysteriousFunction` est une fonction inconnue. On sait qu'avant et après l'appel de la fonction `someMysteriousFunction`, `a` n'est pas changé (c'est-à-dire que ses attributs n'ont pas été modifiés).
+`someMysteriousFunction` est une fonction inconnue, la seule chose qu'on sait sur elle est qu'**elle n'utilise pas de transtypage (aka "cast")**. On sait qu'avant et après l'appel de la fonction `someMysteriousFunction`, `a` n'est pas changé (c'est-à-dire que ses attributs n'ont pas été modifiés).
 
-Quelle proposition est toujours vraie peu importe l'implémentation de la fonction `someMysteriousFunction` ? Choisissez la proposition la plus complète.
+Quelle proposition est toujours vraie **peu importe l'implémentation de la fonction** `someMysteriousFunction` ? En d'autres termes, quelle proposition reste vraie pour toutes les possibles implémentations imaginables de `someMysteriousFunction` ?
+Choisissez la proposition la plus complète.
 
 A. La classe `A` est immuable
 
