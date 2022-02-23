@@ -4,7 +4,7 @@ title:  "Lecture de code 1"
 ---
 Vrai ou Faux:
 
-Nous avons codé la méthode `myMin` suivante pour trouver le minimum d'un array:
+Nous avons codé la méthode `myMin` suivante pour trouver le minimum d'un tableau:
 ```java
 int myMin(int[] x) {
     return x[3];
@@ -18,13 +18,13 @@ void method_min_works() {
     assertEquals(correctMin(x), myMin(x));
 }
 ```
-Supposons que la méthode `correctMin` renvoie le minimum de l'array passé en paramètre. Ce test compile et s'exécute sans erreur.
+Supposons que la méthode `correctMin` renvoie le minimum du tableau passé en paramètre. Ce test compile et s'exécute sans erreur.
 
 ***
 
 ### Solution
 
-On peut avec un rapide coup d'œil déterminer que le min de l'array `x` est égal à 0.
+On peut d'un rapide coup d'œil déterminer que le min du tableau `x` est égal à 0.
 Étant donné que la méthode `correctMin` est supposée correcte, on peut conclure qu'elle va retourner 0.
 La méthode `myMin` quant à elle va pour déterminer le minimum aller chercher le quatrième élément du tableau.
 Cet élément sera, avec le `x` donné, égal à 0. La méthode `assertEquals()` va donc comparer les deux éléments 
