@@ -11,5 +11,4 @@ Ce site a pour but de répertorier les questions hebdomadaires proposées par le
 ***
 
 **Contributeurs**
-* *Antoine T.*
-* *Alban T.*
+*Antoine Tran, Alban Trincherini*

@@ -8,7 +8,7 @@ title:  "Semaine 1 - Tests unitaires avec JUnit"
 * [Pourquoi écrire des tests unitaires ?](pourquoi_tests_unitaires.md)
 * [Lecture de code 1](lecture_de_code_1.md)
 * [Lecture de code 2](lecture_de_code_1.md)
-* [Egalité entre doubles](egalite_entre_double.md)
+* [Egalité entre doubles](egalite_entre_doubles.md)
 * [Lecture de code 3](lecture_de_code_1.md)
 * [Lecture de code 4](lecture_de_code_1.md)
 * [Bonus](bonus.md)
