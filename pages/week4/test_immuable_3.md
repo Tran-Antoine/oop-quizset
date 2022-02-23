@@ -5,8 +5,9 @@ title:  "Test d'immuabilité 3"
 
 Vrai ou Faux:
 
-La classe `Cours` est immuable.
-> Note: le constructeur de la classe `Cours` étant privé et le code donné étant exhaustif, seul `CoursBuilder` peut l'instancier.
+La classe `Cours` décrite ci-dessous est immuable.
+> Note: le constructeur de la classe `Cours` étant privé et le code donné étant exhaustif, seul la classe `CoursBuilder` peut l'instancier.
+
 ```java
 
 public final class Cours {
