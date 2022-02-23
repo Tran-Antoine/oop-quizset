@@ -34,7 +34,7 @@ F. Les propositions B et D
 
 ### Solution
 
-On sait déjà que immuable implique non-modifiable, ce qui nous permet d'éliminer les réponses `A` et `B`.
+On sait déjà que immuable implique non-modifiable, ce qui nous permet d'éliminer les réponses A et B.
 
 
 __Est-ce que `A` est immuable ?__
