@@ -13,4 +13,4 @@ Ce site a pour but de répertorier les questions hebdomadaires proposées par le
 
 **Contributeurs**
 
-*Antoine Tran, Alban Trincherini, Michael Zhang*
+*Antoine Tran, Alban Trincherini, Michael Zhang, Guillaume Boyé*
