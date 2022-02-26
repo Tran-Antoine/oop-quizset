@@ -23,7 +23,7 @@ Il faut se rappeler que les `int` en java utilisent le complément à 2. Ainsi, 
 -a = ~a + 1
 ```
 
-Sachant cela, il n'est pas si intuitif, mais vrai, que la valeur `0` soit égale à son opposé:
+Sachant cela, il n'est pas si intuitif, mais vrai, que la valeur `0` est égale à son opposé:
 
 ```java
 0      = 0b00000000000000000000000000000000
