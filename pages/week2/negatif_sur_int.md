@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Entiers égaux à leur négatif"
+title:  "Entiers égaux à leur opposé"
 ---
 
 Soit `a` un entier de type `int`. Pour combien de valeurs de `a` est-ce que le booléen `-a == a` est-il `true` ?
