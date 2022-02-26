@@ -47,6 +47,6 @@ Pour la valeur `x = 0`, la condition `x & -x == 0` est toujours vraie. La boucle
 Pour la valeur `x = Integer.MIN_VALUE` (plus petite valeur représentable par un `int`), `i` fera un underflow. Donc
 `i = x - 1 = Integer.MAX_VALUE`. Ainsi `i < x` sera évalué à `false` et la boucle se terminera.
 
-Les réponses correctes sont donc les réponses **A** et **B**.
+Les réponses correctes sont donc les réponses **A**, **B** et **D**.
 
 
