@@ -5,9 +5,9 @@ title:  "Changement d'une région de bits"
 
 Quel code ci-dessous permet de définir la valeur `b` aux bits d'index `i-1`, `i`, et `i+1` de `number` (considérant que `i = 0` est le bit le moins significatif) ? Pour raison de simplicité, vous pouvez partir du principe que `i` ne pointe pas vers un bit se trouvant à une des extrémités de `number`, et que bien que `b` soit de type `int`, il ne peut prendre que la valeur `0` ou `1`.
 
-Par exemple, si `number = 00000000`, `i = 2`, `b = 1`, Alors `number` devrait devenir `00001110`.
+Par exemple, pour `number = 00000000`, `i = 2`, `b = 1`, `number` devrait devenir `00001110`.
 
-> Note : Pour des raisons de clarté, certaines réponses sont divisés en plusieurs étapes.
+> Note : pour des raisons de clarté, certaines réponses sont divisés en deux étapes.
 
 A.
 ```java
@@ -25,8 +25,7 @@ number = step2;
 
 C.
 ```java
-int step1 = number | (b << (i-1)) | (b << i) | (b << (i+1));
-number = step1;
+number = number | (b << (i-1)) | (b << i) | (b << (i+1));
 ```
 
 D.
