@@ -9,3 +9,4 @@ title:  "Semaine 2 - Types entiers"
 
 * [Application de masque](application_masque.md)
 * [Changement d'une région de bits](set_bit.md)
+* [Entiers sur 8 bits](entiers_byte.md)
