@@ -12,8 +12,8 @@ int v = 0b10001101;
 print8LSB(f(v));
 
 int f(int v) {
-	int mask = 0x7F & ~1;
-	return v ^ mask;
+    int mask = 0x7F & ~1;
+    return v ^ mask;
 }
 ```
 A. 10001100
