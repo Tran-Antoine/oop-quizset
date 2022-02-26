@@ -33,7 +33,7 @@ void loop(int x) {
 
 Dans le premier code, lorsque `y` atteint `Integer.MAX_VALUE`, l'incrémenter causera un overflow qui lui donnera la valeur `Integer.MIN_VALUE`. Il sera ensuite incrémenter jusqu'à atteindre `-1`, et la boucle s'arrêtera. Il convient de noter que l'instruction `x++` n'a aucune influence sur le résultat, car `int y = Math.abs(x)` n'est évalué qu'une seule fois, lors de l'entrée dans la boucle.
 
-Etant donné que le shift arithmétique vers la droite ajoute toujours des `0`, `y` finira forcément par devenir `0`, une fois que suffisamment de shifts sont effectués. La condition `y != 0` deviendra fausse et la boucle se terminera.
+Etant donné que le shift logique vers la droite ajoute toujours des `0`, `y` finira forcément par devenir `0`, une fois que suffisamment de shifts sont effectués. La condition `y != 0` deviendra fausse et la boucle se terminera.
 
 Pour la valeur `x = 0`, la condition `x & -x == 0` est toujours vraie. La boucle ne se terminera donc pas.
 
