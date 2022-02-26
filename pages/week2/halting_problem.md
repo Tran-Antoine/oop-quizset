@@ -27,6 +27,13 @@ void loop(int x) {
 }
 ```
 
+D.
+```java
+void loop(int x) {
+    for(int i = x-1; i < x; i++) x++;
+}
+```
+
 ***
 
 ### Solution
@@ -36,6 +43,9 @@ Dans le premier code, lorsque `y` atteint `Integer.MAX_VALUE`, l'incrémenter ca
 Etant donné que le shift arithmétique vers la droite ajoute toujours des `0`, `y` finira forcément par devenir `0`, une fois que suffisamment de shifts sont effectués. La condition `y != 0` deviendra fausse et la boucle se terminera.
 
 Pour la valeur `x = 0`, la condition `x & -x == 0` est toujours vraie. La boucle ne se terminera donc pas.
+
+Pour la valeur `x = Integer.MIN_VALUE` (plus petite valeur représentable par un `int`), `i` fera un underflow. Donc
+`i = x - 1 = Integer.MAX_VALUE`. Ainsi `i < x` sera évalué à `false` et la boucle se terminera.
 
 Les réponses correctes sont donc les réponses **A** et **B**.
 
