@@ -19,7 +19,6 @@ void loop(int x) {
     for (int y = x; y != 0; y >>>= 1) n += y & 0x1;
 }
 ```
-'''
 
 C:
 ```java
