@@ -8,3 +8,4 @@ title:  "Semaine 2 - Types entiers"
 ### Questions (triées par ordre croissant de difficulté)
 
 * [Application de masque](application_masque.md)
+* [Changement d'une région de bits](set_bit.md)
