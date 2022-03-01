@@ -58,7 +58,7 @@ Dans cet exercice, il y a 3 bits à changer. Afin de mettre les 3 à 0, il nous 
 
 Le masque est donc:
 ```java
-~((1 << (i-1)) & (1 << i) & (1 << (i+1)))
+~((1 << (i-1)) | (1 << i) | (1 << (i+1)))
 ```
 
 Similairement, un masque contenant `b` aux 3 indexes en question, et `0` ailleurs peut-être construit de la manière suivante:
