@@ -52,19 +52,19 @@ Pour revenir à nos moutons, il est évident que `Cell<Dog>` et `Cell<Canine>` n
 public class Cell<T extends Animal> {
 
 
-	private T animal;
+    private T animal;
 
-	public Cell(T animal) {
-		this.animal = animal;
-	}
+    public Cell(T animal) {
+        this.animal = animal;
+    }
 
-	public void set(T newAnimal) {
-		this.animal = newAnimal;
-	}
+    public void set(T newAnimal) {
+        this.animal = newAnimal;
+    }
 
-	public T get() {
-		return animal;
-	}
+    public T get() {
+        return animal;
+    }
 }
 ```
 
@@ -72,7 +72,7 @@ Et imaginons la méthode `foo` suivante:
 
 ```java
 public void foo(Cell<Canine> cell) {
-	cell.set(new Wolf());
+    cell.set(new Wolf());
 }
 ```
 

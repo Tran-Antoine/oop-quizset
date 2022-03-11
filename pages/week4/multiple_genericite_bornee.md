@@ -7,7 +7,7 @@ Soit l'interface `FoodFunction` possédant une fonction `apply` décrite ci-dess
 ```java
 public interface FoodFunction<???> {
 
-	public ??? apply(???);
+    public ??? apply(???);
 
 }
 ```

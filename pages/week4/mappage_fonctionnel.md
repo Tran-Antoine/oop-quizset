@@ -8,7 +8,8 @@ On cherche à écrire une fonction `mapList`, qui prend en paramètre un objet d
 ```java
 public interface Opener<P, R> {
 
-	R open(P tool);
+    R open(P tool);
+
 }
 ```
 
