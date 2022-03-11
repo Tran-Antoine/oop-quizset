@@ -101,3 +101,9 @@ En établissant la liste des utilisations de la généricité:
 - Le principe est le même pour la méthode `draw`
 
 La réponse correcte est donc **Vrai**.
+
+***
+
+### Pour aller plus loin
+
+Afin de simplifier la question, une liste de `Pair` a été utilisée. Si cela vous intéresse, il existe une collection en java bien plus pratique pour ce genre d'opérations, l'`HashMap`. Cette classe sera vue en détail plus tard dans le semestre, mais elle permet (entre autres) de lier une "clé" à une "valeur", en s'assurant qu'il ne peut pas exister deux fois la même clé.
