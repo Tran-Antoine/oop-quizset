@@ -63,7 +63,7 @@ Une question qui n'a pas été résolue est: quel type exact d'Opener faudrait-i
 - Accepte en paramètre n'importe quel objet de type `Pokeball` (ou plus précis)
 - Renvoie n'importe quel objet de type `Pokemon` (ou plus précis)
 
-Ainsi, le premier type générique correspondant au paramètre de `open` doit être "n'importe quelle classe **mère** de `Pokeball` (`Pokeball` inclue)", puisque s'il sera donc possible de lui donner une `Pokeball`. Le deuxième type générique correspondant au paramètre de `open` doit être "n'importe quelle classe **fille** de `Pokemon` (`Pokemon` inclue)", puisqu'il sera possible de considérer ce type de retour comme un objet de type `Pokemon`. La sytaxe pour ce faire est la suivante:
+Ainsi, le premier type générique correspondant au paramètre de `open` doit être "n'importe quelle classe **mère** de `Pokeball` (`Pokeball` inclue)", puisque s'il sera donc possible de lui donner une `Pokeball`. Le deuxième type générique correspondant au retour de `open` doit être "n'importe quelle classe **fille** de `Pokemon` (`Pokemon` inclue)", puisqu'il sera possible de considérer ce type de retour comme un objet de type `Pokemon`. La sytaxe pour ce faire est la suivante:
 
 ```java
 public List<Pokemon> mapList(List<Pokeball> list, Opener<? super Pokeball, ? extends Pokemon> opener) { ... }
