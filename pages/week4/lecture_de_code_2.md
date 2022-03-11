@@ -3,7 +3,7 @@ layout: page
 title:  "Lecture de code 2"
 ---
 
-Soit la classe `Mix` définie ci-dessous.
+Soit l'interface `Mix` définie ci-dessous.
 ```java
 public interface Mix<T> {
 

@@ -13,7 +13,7 @@ public interface Opener<P, R> {
 }
 ```
 
-On cherche à écrire une fonction `mapList`, qui prend en paramètre une `List<Pokeball>` et un `Opener<???>`, et renvoie une `List<Pokemon>`, qu'elle calcule en créant une nouvelle liste, et en "convertissant" chaque pokeball en un pokémon à l'aide de la fonction `openPokeball` de l'objet `Opener`. 
+On cherche à écrire une fonction `mapList`, qui prend en paramètre une `List<Pokeball>` et un `Opener<???>`, et renvoie une `List<Pokemon>`, qu'elle calcule en créant une nouvelle liste, et en "convertissant" chaque pokeball en un pokémon à l'aide de la fonction `open` de l'objet `Opener`. 
 
 > ⚠️ Compléter les `???` n'est pas une tâche triviale, et cette question ne vous demande pas de savoir le faire. 
 
@@ -44,7 +44,7 @@ H. Tous les types ci-dessus.
 
 ### Solution
 
-Etant donné que nous recevons une liste de `Pokeball` en paramètre sans aucune information supplémentaire, il est important de noter que le type fourni en paramètre de `openPokeball` sera toujours `Pokeball` et jamais un type "plus précis".
+Etant donné que nous recevons une liste de `Pokeball` en paramètre sans aucune information supplémentaire, il est important de noter que le type fourni en paramètre de `open` sera toujours `Pokeball` et jamais un type "plus précis".
 
 Ainsi, les réponses `B` et `D` sont impossibles, puisqu'il s'agit de "convertisseurs" qui **nécessitent** des `PikachuBall`, et malheureusement nous n'avons pas plus précis que `Pokeball`.
 
@@ -63,7 +63,7 @@ Une question qui n'a pas été résolue est: quel type exact d'Opener faudrait-i
 - Accepte en paramètre n'importe quel objet de type `Pokeball` (ou plus précis)
 - Renvoie n'importe quel objet de type `Pokemon` (ou plus précis)
 
-Ainsi, le premier type générique correspondant au paramètre de `openPokeball` doit être "n'importe quelle classe **mère** de `Pokeball` (`Pokeball` inclue)", puisque s'il sera donc possible de lui donner une `Pokeball`. Le deuxième type générique correspondant au paramètre de `openPokeball` doit être "n'importe quelle classe **fille** de `Pokemon` (`Pokemon` inclue)", puisqu'il sera possible de considérer ce type de retour comme un objet de type `Pokemon`. La sytaxe pour ce faire est la suivante:
+Ainsi, le premier type générique correspondant au paramètre de `open` doit être "n'importe quelle classe **mère** de `Pokeball` (`Pokeball` inclue)", puisque s'il sera donc possible de lui donner une `Pokeball`. Le deuxième type générique correspondant au paramètre de `open` doit être "n'importe quelle classe **fille** de `Pokemon` (`Pokemon` inclue)", puisqu'il sera possible de considérer ce type de retour comme un objet de type `Pokemon`. La sytaxe pour ce faire est la suivante:
 
 ```java
 public List<Pokemon> mapList(List<Pokeball> list, Opener<? super Pokeball, ? extends Pokemon> opener) { ... }
