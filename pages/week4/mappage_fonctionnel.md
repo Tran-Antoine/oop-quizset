@@ -3,7 +3,7 @@ layout: page
 title:  "Mappage fonctionnel"
 ---
 
-On cherche à écrire une fonction `mapList`, qui prend en paramètre un objet de type `Opener`, défini ci-dessous.
+Soit l'interface `Opener` définie ci-dessous.
 
 ```java
 public interface Opener<P, R> {
@@ -13,11 +13,15 @@ public interface Opener<P, R> {
 }
 ```
 
-On veut que `mapList` prenne en paramètre une `List<Pokeball>` et un `Opener<???>`, et renvoie une `List<Pokemon>`, qu'elle calcule en créant une nouvelle liste, et en "convertissant" chaque pokeball en un pokémon à l'aide de la fonction `openPokeball` de l'objet `Opener`. La raison pour laquelle les types `P` et `R` ne sont pas bornés par `Pokeball` et `Pokemon` respectivement est qu'il est possible d'utiliser des openers pour autre chose que des pokémons, des boîtes de tomates en conserve par exemple.
+On cherche à écrire une fonction `mapList`, qui prend en paramètre une `List<Pokeball>` et un `Opener<???>`, et renvoie une `List<Pokemon>`, qu'elle calcule en créant une nouvelle liste, et en "convertissant" chaque pokeball en un pokémon à l'aide de la fonction `openPokeball` de l'objet `Opener`. 
+
+> Note: compléter les `???` n'est pas une tâche triviale, et cette question ne vous demande pas de savoir le faire. 
+
+La raison pour laquelle les types `P` et `R` ne sont pas bornés par `Pokeball` et `Pokemon` respectivement est qu'il est possible d'utiliser des openers pour autre chose que des pokémons, des boîtes de tomates en conserve par exemple.
 
 Quels types d'Opener devraient logiquement être acceptés par la fonction `mapList` ? Choisissez la réponse la plus précise.
 
-> Note: considérez que `PikachuBall extends Pokeball`, `Pikachu extends Pokemon`, etc. De plus, dû à un évènement spécial, il est techniquement possible d'obtenir un pokémon rare, et ce peu importe la pokeball utilisée. Par exemple, un `BruxishBall` peut potentiellement produire un `Rayquaza`.
+> Note: considérez que `PikachuBall extends Pokeball`, `Pikachu extends Pokemon`, etc. De plus, dû à un évènement spécial, il est techniquement possible d'obtenir un pokémon rare, et ce peu importe la pokeball utilisée. Par exemple, un `DenticrisseBall` peut potentiellement produire un `Rayquaza`.
 
 
 A. `Opener<Pokeball, Pokemon>`
