@@ -3,103 +3,40 @@ layout: page
 title:  "Lecture de code 2"
 ---
 
-Vrai ou Faux:
-
-> ⚠️ Vous n'avez **absolument** pas besoin de comprendre en détail ce que fait le code présenté ! Tout ce qui est demandé est une analyse de l'utilisation des génériques.
-
-Soit la classe `ProbabilityLaw` définie ci-dessous.
+Soit la classe `Mix` définie ci-dessous.
 ```java
-public class ProbabilityLaw<T> {
+public interface Mix<T> {
 
-    private final List<Pair<T, Float>> events;
-    private final Random random;
-    private float totalWeight;
-
-    public ProbabilityLaw() {
-        this.events = new ArrayList<>();
-        this.random = new Random();
-        this.totalWeight = 0;
+    public interface Mapper<A, B> {
+        B apply(A a);
     }
 
-    public void add(T element, float weight) {
-        // 0 weight elements are not taken into account
-        if(weight == 0) return;
-
-        events.add(new Pair<>(element, weight));
-        totalWeight += weight;
+    default <S> Mix<S> map(Mapper<Mix<T>, Mix<S>> mapper) {
+        return mapper.apply(this);
     }
 
-    public void clear() {
-        events.clear();
-        totalWeight = 0;
-    }
-
-    public void remove(T element) {
-        Pair<T, Float> toRemove = null;
-
-        for(Pair<T, Float> pair : events) {
-            if(pair.k.equals(element)) {
-                toRemove = pair;
-            }
-        }
-
-        if(toRemove != null) {
-            totalWeight -= toRemove.v;
-            events.remove(toRemove);
-        }
-    }
-
-    public T draw() {
-        if(events.size() == 0) {
-            throw new IllegalStateException("No element to be drawn");
-        }
-
-        float current = 0;
-        float randValue = random.nextFloat() * totalWeight;
-        T previous = null;
-
-        for(Pair<T, Float> event : events) {
-            float value = event.v;
-            T key = event.k;
-            if(current > randValue) {
-                return previous;
-            }
-            previous = key;
-            current += value;
-        }
-        return previous;
-    }
-
-    private static class Pair<K, V> {
-
-        private final K k;
-        private final V v;
-
-        private Pair(K k, V v) {
-            this.k = k;
-            this.v = v;
-        }
-    }
+    default <U, S> U consume(Mapper<Mix<T>, Mix<S>> mapper, Mapper<S, U> consumer) {
+        return consumer.apply(this.map(mapper));
+    } 
 }
 ```
 
 Vrai ou Faux: 
 
-Tout le code lié au génériques (paramètres génériques, variables génériques, etc) est correct (d'un point de vue syntaxique), et le code compile donc sans erreur. Partez du principe que tout code non lié à la généricité est correct.
+Tout le code lié au génériques (paramètres génériques, variables génériques, etc) est correct (d'un point de vue syntaxique), et le code compile donc sans erreur.
 
 
 ***
 
 ### Solution
 
-En établissant la liste des utilisations de la généricité:
+Résumons ce que les deux méthodes proposent.
 
-- On donne à `ProbabilityLaw` un type générique `T` quelconque
-- On définit une liste de paires, de type `T` et `Float` respectivement
-- L'ajout d'un élément ajoute bien une nouvelle instance de `Pair` avec paramètres `T` et `float`, qui correspondent bien à une `Pair<T, Float>`
-- Parcourir la liste `events` nous donne bien des `Pair<T, Float>`
-- `pair.k` est bien de type `T`, donc utiliser `equals` sur le paramètre de type `T` a du sens
-- `toRemove.v` est bien de type `Float`, cela a donc du sens de décrémenter la valeur `totalWeight` qui est aussi de type `float`
-- Le principe est le même pour la méthode `draw`
+- `map` permet de passer d'un `Mix<T>` (this) à un `Mix<S>`, à l'aide d'une fonction mapper `Mix<T> => Mix<S>`
+- consume permet de passer d'un `Mix<T>` (this) à un `U`, à l'aide d'une fonction mapper `T => S` et `S => U`
 
-La réponse correcte est donc **Vrai**.
+La méthode `map` ne pose pas de problème particulier, la fonction `apply` en question demande un `Mix<T>` et `this` est fourni, ce qui est valide. Elle renvoie un `Mix<S>`, qui est bien le type de retour de la fonction `map`.
+
+En revanche, la fonction `consume` est problématique: bien que l'appel à `map` soit correcte pour la raison citée au-dessus, le type de retour de `map` est `Mix<S>`. Mais `consumer` demande un `S` en paramètre de `apply`, et non un `Mix<S>` ! Le code ne compile donc pas.
+
+La réponse correcte est donc **Faux**.
