@@ -3,6 +3,8 @@ layout: page
 title:  "Semaine 4 - Généricité I"
 ---
 
+> ⚠️ Ce quiz est **considérablement** plus complexe que les précédents. Il a pour but de vous mettre en difficulté afin de vous habituer à fréquenter l'outil très puissant qu'est la généricité.
+
 ### Questions (triées par ordre croissant de difficulté)
 
 * [Remplacer la généricité](pourquoi_genericite.md)
