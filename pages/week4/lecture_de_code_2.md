@@ -1,7 +1,9 @@
 ---
 layout: page
-title:  "Lecture de code 1"
+title:  "Lecture de code 2"
 ---
+
+Vrai ou Faux:
 
 > ⚠️ Vous n'avez **absolument** pas besoin de comprendre en détail ce que fait le code présenté ! Tout ce qui est demandé est une analyse de l'utilisation des génériques.
 
