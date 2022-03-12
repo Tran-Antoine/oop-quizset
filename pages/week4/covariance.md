@@ -17,11 +17,11 @@ public void foo(Cell<Canine> cell) {...}
 
 Quels objets sont des paramètres acceptables de la méthode `foo` ? Choisissez la réponse la plus précise.
 
-A. Un paramètre de type `Cell<Animal>`
+A. Un objet de type `Cell<Animal>`
 
-B. Un paramètre de type `Cell<Canine>`
+B. Un objet de type `Cell<Canine>`
 
-C. Un paramètre de type `Cell<Dog>`
+C. Un objet de type `Cell<Dog>`
 
 D. Les réponses A et B
 
