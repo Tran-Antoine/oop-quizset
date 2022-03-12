@@ -32,13 +32,13 @@ C. `Opener<Pokeball, Dracaufeu>`
 
 D. `Opener<PikachuBall, Dracaufeu>`
 
-E. Les types `A` et `B`
+E. Les réponses `A` et `B`
 
-F. Les types `C` et `D`
+F. Les réponses `C` et `D`
 
-G. Les types `A` et `C`
+G. Les réponses `A` et `C`
 
-H. Tous les types ci-dessus.
+H. Toutes les réponses ci-dessus.
 
 ***
 

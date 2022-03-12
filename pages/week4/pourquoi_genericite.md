@@ -48,7 +48,7 @@ D. Non, car les deux types `A` de `add` et `get` ne sont pas fixés, il est donc
 
 La proposition `C` n'a pas de sens: il est tout à fait possible d'ajouter des éléments de n'importe quel type dans la liste, puisqu'il s'agit d'une liste d'`Object`, et ce quel que soit `A`.
 
-Il est essentiel de remarquer que malgré que dans le second code, malgré que les deux génériques aient le même nom `A`, ils ne sont en aucun cas liés. De manière similaire, dans le code suivant:
+Il est essentiel de remarquer que malgré que dans le second code les deux génériques aient le même nom `A`, ils ne sont en aucun cas liés. De manière similaire, dans le code suivant:
 ```java
 void foo() {
     int test = 0;
@@ -60,7 +60,7 @@ void bar() {
     (...)
 }
 ```
-les deux variables `test` n'ont aucun lien entre elles, bien qu'elles aient le même nom. Elle ne sont pas dans le même **scope**. C'est le même principe pour les paramètres génériques `A`. De plus, ces derniers ne sont pas fixes ! A chaque appel de `add`, l'utilisateur choisit implicitement ou explicitement le type `A`, et l'objet donné en paramètre est ajouté. A chaque appel de `get`, l'utilisateur **choisit** également implicitement ou explicitement le type qu'il veut récupérer, et la méthode `get` force un transtypage pour lui donner ce qu'il veut. Mais cela peut mener à bien des erreurs ! Par exemple, ce code compile parfaitement bien:
+les deux variables `test` n'ont aucun lien entre elles, bien qu'elles aient le même nom. Elle ne sont pas dans le même **scope**. C'est le même principe pour les paramètres génériques `A`. De plus, ces derniers ne sont pas fixes ! A chaque appel de `add`, l'utilisateur **choisit** implicitement ou explicitement le type `A`, et l'objet donné en paramètre est ajouté. A chaque appel de `get`, l'utilisateur **choisit** également implicitement ou explicitement le type qu'il veut récupérer, et la méthode `get` force un transtypage pour lui donner ce qu'il veut. Mais cela peut mener à bien des erreurs ! Par exemple, ce code compile parfaitement bien:
 ```java
 Group group = new Group();
 group.add("Hello");

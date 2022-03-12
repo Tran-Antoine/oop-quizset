@@ -46,7 +46,7 @@ public interface FoodFunction<A, B> {...}
 ```
 sont **complètement** (!!!) équivalents, la seule différente étant les noms des types génériques.
 
-Les types génériques de la réponse `B` sont déjà bien plus corrects, malheureusement le type de retour de la fonction ainsi que le type de paramètre sont trop généraux: même si se trouve dans une `FoodFunction<Orange, OrangeJuice>`, il est possible de donner un `Steak` en paramètre, et on ne peut rien récupérer de plus précis qu'un `CookedMeal`, malgré le fait qu'on souhaiterait pouvoir récupérer un `OrangeJuice`.
+Les types génériques de la réponse `B` sont déjà bien plus corrects, malheureusement le type de retour de la fonction ainsi que le type de paramètre sont trop généraux: admettons que nous avons une `FoodFunction<Orange, OrangeJuice>`, il est possible de lui donner un `Steak` en paramètre, et on ne peut rien récupérer de plus précis qu'un `CookedMeal`, malgré le fait qu'on souhaiterait pouvoir récupérer un `OrangeJuice`.
 
 La réponse `D` est fausse, puisqu'il est possible de créer une `FoodFunction<Tractor, Lasagna>`, étant donné qu'il n'y a aucune restriction sur `P`. Le fait que `apply` demande un type `P` borné par `P extends RawIngredient` ne fait qu'empirer les choses: l'utilisateur de la méthode peut fournir n'importe quelle sous-classe de `RawIngredient`, mais la fonction elle-même n'a pas connaissance du type précis donné, il ne peut que se baser sur ce que `RawIngredient` propose. De plus, même s'ils ont le même non, le `P` défini au niveau de la classe et celui défini comme paramètre générique de la méthode n'ont rien à voir.
 

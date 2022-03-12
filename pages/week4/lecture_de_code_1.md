@@ -3,7 +3,7 @@ layout: page
 title:  "Lecture de code 1"
 ---
 
-> ⚠️ Vous n'avez **absolument** pas besoin de comprendre en détail ce que fait le code présenté ! Tout ce qui est demandé est une analyse de l'utilisation des génériques.
+> ⚠️ Vous n'avez **pas** besoin de comprendre en détail ce que fait le code présenté ! Tout ce qui est demandé est une analyse de l'utilisation des génériques.
 
 Soit la classe `ProbabilityLaw` définie ci-dessous.
 ```java
@@ -106,4 +106,4 @@ La réponse correcte est donc **Vrai**.
 
 ### Pour aller plus loin
 
-Afin de simplifier la question, une liste de `Pair` a été utilisée. Si cela vous intéresse, il existe une collection en java bien plus pratique pour ce genre d'opérations, l'`HashMap`. Cette classe sera vue en détail plus tard dans le semestre, mais elle permet (entre autres) de lier une "clé" à une "valeur", en s'assurant qu'il ne peut pas exister deux fois la même clé.
+Afin de simplifier la question, une liste de `Pair` a été utilisée. Si cela vous intéresse, il existe une collection en java bien plus pratique pour ce genre d'opérations, appelée `HashMap`. Cette classe sera vue en détail plus tard dans le semestre, mais elle permet (entre autres) de lier une "clé" à une "valeur", en s'assurant qu'il ne peut pas exister deux fois la même clé.
