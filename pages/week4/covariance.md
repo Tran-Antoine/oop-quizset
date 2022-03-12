@@ -35,7 +35,7 @@ F. Toutes les réponses ci-dessus
 
 Un piège très typique qui peut paraître très illogique au premier abord !
 
-Il semble plutôt normal que `Cell<Aniaml>` ne soit pas un paramètre valide. Il s'agit d'un type "valide", dans le sens où le paramètre générique d'une cellule doit hériter de `Animal`, et c'est bien le cas ici. En revanche, la méthode `foo` demande une cellule de type `Canine`, qui est un type plus précis que `Animal`. `Cell<Animal` n'est donc pas un paramètre acceptable. Similairement, si la méthode `foo` demandait un objet de type `Apple`, il ne serait pas possible de fournir un `Fruit`, qui est un type plus général. On peut donc éliminer les réponses `A`, `D` et `F`.
+Il semble plutôt normal que `Cell<Aniaml>` ne soit pas un paramètre valide. Il s'agit d'un **type** "valide", dans le sens où le paramètre générique d'une cellule doit hériter de `Animal`, et c'est bien le cas ici. En revanche, la méthode `foo` demande une cellule de type `Canine`, qui est un type plus précis que `Animal`. `Cell<Animal` n'est donc pas un paramètre acceptable. Similairement, si la méthode `foo` demandait un objet de type `Apple`, il ne serait pas possible de fournir un `Fruit`, qui est un type plus général. On peut donc éliminer les réponses `A`, `D` et `F`.
 
 Il est trivial de noter que `Cell<Canine>` est bien évidemment un paramètre valide, puisqu'un `Cell<Canine>` est demandé.
 

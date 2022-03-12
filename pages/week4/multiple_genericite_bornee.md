@@ -12,12 +12,12 @@ public interface FoodFunction<???> {
 }
 ```
 
-Les `???` représentent du code manquant, qui doit être complété. On souhaite que l'interface fonctionne de la manière suivante: Elle prend en paramètre **un** ingrédient brut, qui doit hériter de `RawIngredient`, et renvoie un plat préparé, qui doit hériter de `CookedMeal`. Il s'agit donc d'une interface permettant de "convertir" un ingrédient en un plat, via la méthode `apply`. Notez que `FoodFunction<RawIngredient, CookedMeal` est un type valide, mais ce n'est pas le seul. `FoodFunction<Apple, ApplePie>` par exemple doit également en être un, et que le code suivant doit compiler:
+Les `???` représentent du code manquant, qui doit être complété. On souhaite que l'interface fonctionne de la manière suivante: elle prend en paramètre un ingrédient brut, qui doit hériter de `RawIngredient`, et renvoie un plat préparé, qui doit hériter de `CookedMeal`. Il s'agit donc d'une interface permettant de "convertir" un ingrédient en un plat, via la méthode `apply`. Notez que `FoodFunction<RawIngredient, CookedMeal` est un type valide, mais ce n'est pas le seul. `FoodFunction<Apple, ApplePie>` par exemple doit également en être un, et le code suivant doit compiler:
 ```java
 FoodFunction<Apple, ApplePie> f = (...);
 ApplePie result = f.apply(new Apple());
 ```
-Comment faut-il compléter les `???` ? (dans l'ordre, donc d'abord le/les type générique de `FoodFunction`, puis le type de retour de `apply`, plus le type de paramètre de `apply`)
+Comment faut-il compléter les `???` ? (dans l'ordre, donc d'abord le/les type générique de `FoodFunction`, puis le type de retour de `apply`, puis le type de paramètre de `apply`)
 
 A. `RawIngredient, CookedMeal`, `CookedMeal`, `RawIngredient`
 
