@@ -83,7 +83,7 @@ public class ProbabilityLaw<T> {
 
 Vrai ou Faux: 
 
-Tout le code lié au génériques (paramètres génériques, variables génériques, etc) est correct (d'un point de vue syntaxique), et le code compile donc sans erreur. Partez du principe que tout code non lié à la généricité est correct.
+Tout le code lié aux génériques (paramètres génériques, variables génériques, etc) est correct (d'un point de vue syntaxique), et le code compile donc sans erreur. Partez du principe que tout code non lié à la généricité est correct.
 
 
 ***
