@@ -39,7 +39,7 @@ Il semble plutôt normal que `Cell<Animal>` ne soit pas un paramètre valide. Il
 
 Il est trivial de noter que `Cell<Canine>` est bien évidemment un paramètre valide, puisqu'un `Cell<Canine>` est demandé.
 
-Quand à `Cell<Dog>`, sachant que `Dog` hérite de `Canine`, est-ce un paramètre valide ? Pour le comprendre, il s'agit de déterminer quelles conditions doivent être remplies pour pouvoir être un paramètre acceptable. Soit une méthode demandant un objet de type `X`. Un objet de type `Y` est un paramètre valide, si une des deux conditions suivantes est remplie:
+Quant à `Cell<Dog>`, sachant que `Dog` hérite de `Canine`, est-ce un paramètre valide ? Pour le comprendre, il s'agit de déterminer quelles conditions doivent être remplies pour pouvoir être un paramètre acceptable. Soit une méthode demandant un objet de type `X`. Un objet de type `Y` est un paramètre valide, si une des deux conditions suivantes est remplie:
 
 - `X` = `Y`
 - `Y` hérite de `X`
