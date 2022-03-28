@@ -40,7 +40,7 @@ set.add("dynamique");
 printElems(set);
 ```
 
-Quelle proposition est la plus vraie ?
+Quelle affirmation est correcte ? Choisissez la réponse la plus précise.
 
 A. A et B affichent la même chose
 B. A et C affichent la même chose

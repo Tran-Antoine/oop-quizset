@@ -13,7 +13,7 @@ for (int i = 0; i < Integer.MAX_VALUE; i++) {
     l.add(0, i);
 }
 ```
-Quel code se terminera (à priori) en premier ?
+Quel code est le plus rapide, d'un point de vue asymptotique ?
 A. Le code A
 B. Le code B
 C. Ils se termineront presque en même temps

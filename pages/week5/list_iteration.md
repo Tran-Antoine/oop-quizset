@@ -16,7 +16,7 @@ for (int elem : l) {
     System.out.println(elem)
 }
 ```
-Quelle affirmation est la plus vraie ?
+Quelle affirmation est correcte ? Choisissez la réponse la plus précise.
 
 A. Si `l` a pour implémentation `ArrayList<Integer>`, alors les 2 codes auront asymptotiquement le même temps d'exécution
 B. Si `l` a pour implémentation `LinkedList<Integer>`, alors les 2 codes auront asymptotiquement le même temps d'exécution
