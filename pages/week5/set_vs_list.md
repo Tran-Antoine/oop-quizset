@@ -1,3 +1,9 @@
+---
+layout: page
+title:  "Notion d'ordre sur Set et List"
+---
+
+
 On définit la méthode suivante :
 
 ```java

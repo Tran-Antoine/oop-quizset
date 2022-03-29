@@ -1,3 +1,8 @@
+---
+layout: page
+title:  "LinkedList et ArrayList"
+---
+
 Soit les 2 codes suivants :
 A :
 ```java
