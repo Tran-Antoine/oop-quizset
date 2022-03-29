@@ -15,6 +15,7 @@ B. `new ArrayList<>(List.of(1, 7, 9, 56)).subList(0, 2)`
 C. `new HashMap<>().keySet()`
 
 D. `new HashMap<>().values()`
+
 ***
 
 ### Solution
