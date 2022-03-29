@@ -6,7 +6,7 @@ title:  "Abstraction des collections"
 De manière générale, une collection est toujours soit complètement modifiable (aucune méthode ne lance d'exception `UnsupportedOperationException`) ou complètement non-modifiable (toutes les méthodes de modification lancent des exceptions).
 Cependant, certaines collections / vues échappent à la règle, dont **une ou plusieurs** parmi celles ci-dessous. Laquelle/Lesquelles ?
 
-> Indice: aucune des vues ci-dessous n'a été conçue dans le *but* d'être partiellement / complètement immuable (contrairement à `List.copyOf` ou `List.of` par exemple, qui auraient pu être implémentée de façon muable). Donc partez du principe que ces vues *souhaiteraient* être muables: si une opération n'est pas supportée pour une d'entre elles, c'est forcément parce que l'opération poserait un problème.
+> Indice: Partez du principe que ces vues *souhaiteraient* être muables: si une opération n'est pas supportée pour une d'entre elles, c'est forcément parce que l'opération poserait un problème.
  
 A. `Arrays.asList(new int[]{5, 8, 3})`
 
