@@ -23,13 +23,13 @@ A. `RawIngredient, CookedMeal`, `CookedMeal`, `RawIngredient`
 
 B. `P extends RawIngredient, R extends CookedMeal`, `CookedMeal`, `RawIngredient`
 
-C. `P extends RawIngredient, R extends CookedMeal`, `P`, `R`
+C. `P extends RawIngredient, R extends CookedMeal`, `R`, `P`
 
-D. `P, R extends CookedMeal`, `<P extends RawIngredient> P`, `R`
+D. `P, R extends CookedMeal`, `<P extends RawIngredient> R`, `P`
 
-E. `P extends CookedMeal, R`, `<R extends CookedMeal> P`, `R`
+E. `P extends CookedMeal, R`, `<R extends CookedMeal> R`, `P`
 
-F. `P extends RawIngredient, R extends CookedMeal`, `<S extends RawIngredient, T extends CookedMeal> S`, `T`
+F. `P extends RawIngredient, R extends CookedMeal`, `<S extends RawIngredient, T extends CookedMeal> T`, `S`
 
 
 ***
