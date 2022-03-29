@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Abstraction des collections"
+title:  "Muabilité partielle des vues"
 ---
 
 De manière générale, une collection est toujours soit complètement modifiable (aucune méthode ne lance d'exception `UnsupportedOperationException`) ou complètement non-modifiable (toutes les méthodes de modification lancent des exceptions).
