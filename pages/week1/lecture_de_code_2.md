@@ -8,8 +8,8 @@ Si le test suivant passe, nous avons la garantie que la fonction `mySum`, qui ca
 > Note: `13.3 + 2.1 + 6.75 - 8.01 = 14.14`
 
 ```java
-int[] array = {13.3, 2.1, 6.75, -8.01};
-int sum = mySum(array);
+double[] array = {13.3, 2.1, 6.75, -8.01};
+double sum = mySum(array);
 
 assertEquals(14.14, sum, 1e-8);
 ```
