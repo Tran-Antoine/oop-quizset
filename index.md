@@ -10,6 +10,7 @@ Ce site a pour but de répertorier les questions hebdomadaires proposées par le
 * [Immuabilité](/pages/week3/toc.md)
 * [Généricité I](/pages/week4/toc.md)
 * [Collections](/pages/week5/toc.md)
+* [Lambdas et programmation par flots](/pages/week9/toc.md)
 
 ***
 
