@@ -29,4 +29,4 @@ D. Le code ne compile pas.
 
 Ici `anyMatch` est une méthode terminale qui renvoie true si un des éléments de la liste est strictement plus grand que 5 et false dans le cas contraire. Etant donné qu'il est impossible d'appeller `allMatch` sur un booléen, le code ne va pas compiler, `allMatch` étant une méthode à appeler sur les streams.
 
-La réponse est donc `D`.
+La réponse est donc **D**.
