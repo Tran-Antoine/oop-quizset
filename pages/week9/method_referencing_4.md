@@ -57,4 +57,4 @@ Dans ce cas de figure, l'ordre appliqué est **toujours** le même:
 - Le premier paramètre correspond à "sur qui on appelle la méthode"
 - Le deuxième paramètre correspond à "qui on passe en paramètre de la méthode appelée"
 
-La réponse correcte est donc la réponse **B**
+La réponse correcte est donc la réponse **B**.
