@@ -7,3 +7,4 @@ title:  "Semaine 9 - Lambdas et programmation par flots"
 
 * [Référence de méthode 1](method_referencing_1.md)
 * [Référence de méthode 2](method_referencing_2.md)
+* [Programmation par flots 1](stream_1.md)
