@@ -3,7 +3,7 @@ layout: page
 title:  "Algèbre booléenne 2"
 ---
 
-Vrai ou Faux
+Vrai ou Faux ?
 
 Après avoir exécuté le code suivant, l'expression `a → b` est une tautologie (est toujours vraie).
 
