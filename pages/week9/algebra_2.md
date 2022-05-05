@@ -7,7 +7,7 @@ Vrai ou Faux ?
 
 Après avoir exécuté le code suivant, l'expression `a → b` est une tautologie (est toujours vraie).
 
-Partez du principe que `someMysteriousList` une méthode valide qui renvoie une liste arbitraire de nombres, et `someMysteriousPredicate` une méthode valide qui renvoie un prédicat (`Predicate<Integer>`) valide.
+Partez du principe que `someMysteriousList` est une méthode valide qui renvoie une liste arbitraire de nombres, et que `someMysteriousPredicate` est une méthode valide qui renvoie un prédicat (`Predicate<Integer>`).
 
 ```java
 List<Integer> list = someMysteriousList();
