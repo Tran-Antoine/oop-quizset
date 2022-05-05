@@ -13,8 +13,11 @@ Object mystery = List.of("14", "76", "10")
 ```
 
 A: int / Integer
+
 B: String
+
 C: Autre
+
 D: Le code ne compile pas.
 
 ***
