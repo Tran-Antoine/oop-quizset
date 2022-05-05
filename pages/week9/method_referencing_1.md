@@ -24,7 +24,7 @@ A. ALL_CAPS
 
 B. all_caps
 
-C. Le programme compile mais lance une erreur à l'exécution: il n'est pas possible d'appliquer `toLowerCase` au caractère `_`
+C. Le programme compile mais lance une erreur à l'exécution
 
 D. Le programme ne compile pas
 
