@@ -3,58 +3,44 @@ layout: page
 title:  "Référence de méthode 1"
 ---
 
-On définit la classe `Student` ci-dessous:
+On définit l'interface ci-dessous.
 ```java
+interface MyInterface {
 
-public class Student {
+    String action();
 
-    private final String name;
-
-    public Student(String name) {
-        this.name = name;
-    }
-
-    public String help(Student other) {
-        return this.name + " a aidé " + other.name;
-    }
 }
 ```
-Qu'affiche le programme suivant ?
+
+Déterminez le résultat du code suivant.
 
 ```java
-
-Student s1 = new Student("Alban");
-Student s2 = new Student("Antoine");
-
-// BiFunction permet de représenter une fonction à deux arguments, ici une fonction (Student, Student) => String
-BiFunction<Student, Student, String> combiner = Student::help; 
-
-// apply "applique" la fonction aux arguments donnés et retourne le résultat
-System.out.println(combiner.apply(s1, s2));
-
+MyInterface test = String::toLowerCase;
+System.out.println(test.action("ALL_CAPS"));
 ```
 
-A. Le programme ne compile pas
 
-B. Alban a aidé Antoine
+A. ALL_CAPS
 
-C. Antoine a aidé Alban
+B. all_caps
 
-D. Antoine a aidé Antoine
+C. Le programme compile mais lance une erreur à l'exécution: il n'est pas possible d'appliquer `toLowerCase` au caractère `_`
 
-E. Alban a aidé Alban
+D. Le programme ne compile pas
 
 ***
 
 ### Solution
 
 
-Il s'agit d'une utilisation particulière du référençage de méthode. Il est important de noter que la fonction `help` ne prend qu'un seul argument en paramètre, alors qu'on l'attribue comme valeur de fonction qui prend deux paramètres (deux fois `Student`). Malgré tout, le code compile ! Bien qu'un seul paramètre soit nécessaire à la méthode `help`, il est crucial de remarquer que cette méthode n'est **pas** statique, elle dépend donc d'une instance de type `Student`. Pour pouvoir appeler la fonction `help`, nous avons donc besoin de:
-- Un étudiant sur lequel appeler la méthode
-- Un étudiant à passer en paramètre
+`MyInterface` est une interface fonctionnelle représentant une fonction de type `() -> String`. Or, `String::toLowerCase` est équivalente à une fonction `String -> String`, et ce malgré le fait que `toLowerCase` ne prenne aucun paramètre ! En effet, étant donné qu'il s'agit d'une méthode d'instance, la chaîne de caractères en question depuis laquelle `toLowerCase` est appliquée est considérée comme un paramètre. Deux solutions sont possibles pour régler le problème:
 
-Dans ce cas de figure, l'ordre appliqué est **toujours** le même:
-- Le premier paramètre correspond à "sur qui on appelle la méthode"
-- Le deuxième paramètre correspond à "qui on passe en paramètre de la méthode appelée"
+- Ajouter un paramètre `String` à la méthode `action`
+- Remplacer le code par:
+```java
+// puisqu'on spécifie le String en question, pas besoin de le passer en paramètre
+MyInterface test = "ALL_CAPS"::toLowerCase; 
+System.out.println(test.action());
+```
 
-La réponse correcte est la `B`
+La réponse correcte est donc la réponse **D**.
