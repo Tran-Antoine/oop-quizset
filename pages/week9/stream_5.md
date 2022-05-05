@@ -3,7 +3,8 @@ layout: page
 title:  "Programmation par flots 5"
 ---
 
-Déterminez la sortie du code suivant.
+Déterminez le résultat du code suivant.
+
 
 ```java
 List<Integer> list = List.of("9", "16", "4")
