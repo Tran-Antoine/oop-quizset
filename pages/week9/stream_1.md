@@ -6,41 +6,31 @@ title:  "Programmation par flots 1"
 Déterminez le résultat du code suivant.
 
 ```java
-Stream<Integer> stream = List.of(1, 2, 3, 4, 5).stream();
+Collection<Integer> numbers = List.of(1,2,3,4);
 
-
-List<Integer> list1 = stream
-    .filter(x -> x <= 4)
+List<Integer> result = numbers
+    .stream()
+    .filter(x -> x%2 == 0)
     .toList()
 
-List<Integer> list2 = stream
-    .filter(x -> x >= 2)
-    .toList()
-
-List<Integer> total = new ArrayList<>();
-total.addAll(list1);
-total.addAll(list2);
-
-System.out.println(total);
+System.out.println(result); 
 ```
 
-A. [1, 2, 3, 4, 2, 3, 4, 5]
+A. [1, 2, 3, 4]
 
-B. [5, 1, 2]
+B. [1, 3]
 
-C. Le code compile mais lance une erreur à l'exécution
+C. [2, 4]
 
-D. Le code ne compile pas
+D. Le code compile mais lance une erreur à l'exécution
 
-
+E. Le code ne compile pas
 
 ***
 
 ### Solution
 
 
-Il existe plusieurs types d'opérations sur les streams. Certaines permettent d'en créer un (`Stream.of`, `list.toStream`, etc), certaines passent d'un stream à un autre (`map`, `flatMap`, `filter`, etc), et d'autres génèrent un résultat concret (`reduce`, `toList`, `max`, etc).
-
-Il est important de noter que les opérations générant un résultat sont **terminales**. Elles doivent être la dernière action effectuée, et le stream est fermé après cette dernière, de manière définitive. Pourtant, dans le code ci-dessus, on réutilise `stream` après avoir appliqué `toList` une première fois, ce qui est interdit.
+On crée en premier lieu une collection contenant les nombres de 1 à 4. Puis on applique un filtre, en ne laissant que passer les nombres pairs (c'est à dire les nombres dont le résultat de la division entière par 2 vaut 0). Une fois le filtre effectué, on convertit le stream en une liste, qu'on affiche.
 
 La réponse correcte est donc la réponse **C**.

@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Programmation par flots 8"
+title:  "Algèbre booléenne 1"
 ---
 
 Vrai ou Faux ? Le booléen `b` vaut `true`.

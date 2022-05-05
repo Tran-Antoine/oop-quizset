@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Programmation par flots 5"
+title:  "Programmation par flots 6"
 ---
 
 Déterminez le résultat du code suivant.
