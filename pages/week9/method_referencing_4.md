@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Référence de méthode 2"
+title:  "Référence de méthode 4"
 ---
 
 On définit la classe `Student` ci-dessous:
