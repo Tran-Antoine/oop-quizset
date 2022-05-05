@@ -22,6 +22,7 @@ Function<String, String> func = String::toUpperCase;
 La première syntaxe définit une fonction qui prend un String `str` en paramètre et renvoie le résultat de `str.toUpperCase()`
 
 
-Alors que la deuxième syntaxe utilise du method referencing, `toUpperCase` est une fonction qui s'applique sur un string et prend donc un seul argument (le String sur le quel on l'applique). Dans ce cas on peut donc se servir de method referencing 
+La deuxième syntaxe utilise du référençage de méthode: `toUpperCase` est une fonction qui s'applique sur un String et ne prend aucun argument, si ce n'est le String sur lequel on l'applique. Il s'agit donc d'une écriture complètement équivalente à la première.
+
 
 La réponse est donc **Vrai**.
