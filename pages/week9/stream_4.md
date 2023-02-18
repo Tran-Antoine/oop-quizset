@@ -27,7 +27,7 @@ D. false
 
 ### Solution
 
-On convertit d'abord tous les String en l'Integer auquel ils corréspondent.
-Ensuite on cherche simplement un élement qui remplit le prédicat "Est strictement plus grand que 6". Etant donné que le stream contient 7 qui est bien strictement plus grand que 6, `anyMatch` va retourner true.
+On convertit d'abord tous les String en l'Integer auquel ils correspondent.
+Ensuite on cherche simplement un élement qui satisfait le prédicat "Est strictement plus grand que 6". Etant donné que le stream contient 7 qui est bien strictement plus grand que 6, `anyMatch` va retourner true.
 
 La bonne réponse est donc **C**.

@@ -1,11 +1,10 @@
 ---
 layout: page
-title:  "Référence de méthode 3"
+title: "Référence de méthode 3"
 ---
 
-title = "Lambda vs method referencing"
-text = '''
-Vrai ou Faux: 
+Vrai ou Faux:
+
 Les deux codes suivants sont équivalents.
 ```java
 Function<String, Integer> func = str -> str.length();

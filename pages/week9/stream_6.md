@@ -11,7 +11,7 @@ Collection<Integer> numbers = List.of(3, 2, 9, 0);
 int result = numbers
     .stream()
     .map(x -> x + 1)
-    .flatMap(x -> Arrays.asList(x, x + 1).stream())
+    .flatMap(x -> Stream.of(x, x + 1))
     .distinct()
     .reduce((a, b) -> a+b)
     .orElse(-1);
