@@ -7,6 +7,7 @@ Ce site a pour but de répertorier les questions hebdomadaires proposées par le
 
 * [Tests unitaires](/pages/week1/toc.md)
 * [Types entiers](/pages/week2/toc.md)
+* [Généricité I](/pages/week4/toc.md)
 
 ***
 
