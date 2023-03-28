@@ -15,6 +15,7 @@ On définit la méthode suivante :
 ```
 
 Soient les codes suivants :
+
 A.
 
 ```java
@@ -49,10 +50,15 @@ printElems(set);
 Quelle affirmation est correcte ? Choisissez la réponse la plus précise.
 
 A. A et B affichent la même chose
+
 B. A et C affichent la même chose
+
 C. B et C affichent la même chose
+
 D. Tous les codes affichent la même chose
+
 E. Tous les codes affichent quelque chose de différent
+
 
 ***
 

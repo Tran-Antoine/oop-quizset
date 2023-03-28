@@ -4,6 +4,7 @@ title:  "Itération sur des listes"
 ---
 
 On considère un objet `l` de type `List<Integer>`. On suppose que la taille de l est très grande.
+
 A.
 ```java
 for (int i = 0; i < l.size(); i++) {
@@ -19,8 +20,11 @@ for (int elem : l) {
 Quelle affirmation est correcte ? Choisissez la réponse la plus précise.
 
 A. Si `l` a pour implémentation `ArrayList<Integer>`, alors les 2 codes auront asymptotiquement le même temps d'exécution
+
 B. Si `l` a pour implémentation `LinkedList<Integer>`, alors les 2 codes auront asymptotiquement le même temps d'exécution
+
 C. Peu importe l'implémentation de `l`, les 2 codes auront toujours asymptotiquement le même temps d'exécution
+
 D. Peu importe l'implémentation de `l`, les 2 codes n'auront jamais asymptotiquement le même temps d'exécution
 
 ***

@@ -4,6 +4,7 @@ title:  "LinkedList et ArrayList"
 ---
 
 Soit les 2 codes suivants :
+
 A :
 ```java
 List<Integer> l = new ArrayList<>();
@@ -19,8 +20,11 @@ for (int i = 0; i < Integer.MAX_VALUE; i++) {
 }
 ```
 Quel code est le plus rapide, d'un point de vue asymptotique ?
+
 A. Le code A
+
 B. Le code B
+
 C. Ils se termineront presque en même temps
 
 ***
