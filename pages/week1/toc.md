@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Semaine 1 - Tests unitaires avec JUnit"
+title:  "Tests unitaires avec JUnit"
 ---
 
 ### Questions (triées par ordre croissant de difficulté)
