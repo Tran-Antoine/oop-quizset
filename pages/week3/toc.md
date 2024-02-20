@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Semaine 3 - Immuabilité"
+title:  "Immuabilité"
 ---
 
 ### Questions (triées par ordre croissant de difficulté)
