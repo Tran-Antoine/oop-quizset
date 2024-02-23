@@ -8,14 +8,14 @@ On définit les 2 classes suivantes :
 class A {...}
 final class B extends A {...}
 ```
-Soit le code suivant :
+
+Et le code suivant :
 ```java
 A a = new B();
 someMysteriousFunction(a);
 ```
-`someMysteriousFunction` est une fonction inconnue, la seule chose qu'on sait sur elle est qu'**elle n'utilise pas de transtypage (aka "cast")**. On sait qu'avant et après l'appel de la fonction `someMysteriousFunction`, `a` n'est pas changé (c'est-à-dire que ses attributs n'ont pas été modifiés).
 
-Quelle proposition est toujours vraie **peu importe l'implémentation de la fonction** `someMysteriousFunction` ? En d'autres termes, quelle proposition reste vraie pour toutes les possibles implémentations imaginables de `someMysteriousFunction` ?
+Sachant qu'il n'existe aucune implémentation possible de `someMysteriousFunction` qui **n'utilise pas de transtypage (aka "cast")** tel que le code ci-dessus modifie `a`, quelle proposition est vraie ?
 Choisissez la proposition la plus complète.
 
 A. La classe `A` est immuable
