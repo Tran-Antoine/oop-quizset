@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Semaine 4 - Généricité I"
+title:  "Généricité I"
 ---
 
 > ⚠️ Ce quiz est passablement plus complexe que les précédents. Il a pour but de vous mettre en difficulté afin de vous habituer à fréquenter l'outil très puissant qu'est la généricité. Même en ayant très bien compris le cours, il est possible que vous ne le réussissiez pas du premier coup.
