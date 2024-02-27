@@ -7,6 +7,7 @@ Ce site répertorie des questions hebdomadaires sur le cours [CS108](https://cs1
 
 * [Tests unitaires](/pages/week1/toc.md)
 * [Immuabilité](/pages/week3/toc.md)
+* [Généricité](/pages/week4/toc.md)
 
 ***
 
