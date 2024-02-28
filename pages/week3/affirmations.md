@@ -23,4 +23,4 @@ Que l'attribut soit `final` ou pas, cela n'a aucun impact sur le fait qu'une lis
 
 Selon la définition du cours, posséder des attributs muables n'est en soi pas une atteinte à l'immuabilité, tant qu'une grande prudence est exercée lorsqu'il s'agit d'utiliser / partager ces attributs.
 
-La création répétée d'instances afin d'éviter la muabilité pouvant en effet nuire aux performances, il s'ensuit que la réponse correcte est la réponse **B**
+La création répétée d'instances afin d'éviter la muabilité pouvant en effet nuire aux performances, il s'ensuit que la réponse correcte est la réponse **C**
