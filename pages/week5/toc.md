@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Semaine 5 - Collections"
+title:  "Collections"
 ---
 
 ### Questions (triées par ordre croissant de difficulté)
